@@ -29,7 +29,9 @@
     <main class="l-main">
       <header class="l-header">
         <nav class="l-header__inner">
-          <h1 class="l-header__logo"><a href=""><img src="images/logo.webp" alt="FINANCIAL AGENCY" /></a></h1>
+          <h1 class="l-header__logo">
+            <a href=""><img src="images/logo.webp" alt="FINANCIAL AGENCY" /></a>
+          </h1>
           <ul class="l-header__menu-list">
             <li><a href="" class="l-header__menu-link">お客様の声</a></li>
             <li><a href="" class="l-header__menu-link">3秒節約プチ体験</a></li>
@@ -92,8 +94,8 @@
       <section class="l-mv">
         <div class="l-mv__inner">
           <picture>
-            <source media="(min-width:768px)" srcset="images/mv-pc.webp">
-            <img src="images/mv.webp" alt="がん保険のピッタリが見つかる!保険はAIで手軽に探そう！ 取扱保険会社約50社 取扱商品数約170">
+            <source media="(min-width:768px)" srcset="images/mv-pc.webp" />
+            <img src="images/mv.webp" alt="がん保険のピッタリが見つかる!保険はAIで手軽に探そう！ 取扱保険会社約50社 取扱商品数約170" />
           </picture>
           <div class="l-cta">
             <a href="" class="l-cta__button"><img src="images/cta-button.webp" alt="カンタン1分 がん保険だけならいくらになる？ もっと詳しく" /></a>
@@ -104,7 +106,7 @@
 
       <section class="l-section">
         <div class="l-section__inner">
-          <h2 class="l-section__title"><img src="images/simulation.webp" alt="Simulation 3秒マッチング体験"></h2>
+          <h2 class="l-section__title"><img src="images/simulation.webp" alt="Simulation 3秒マッチング体験" /></h2>
           <div class="l-simulation">
             <form id="simulationForm" action="newActionURL" method="post">
               <fieldset class="l-simulation__fieldset">
@@ -170,14 +172,16 @@
                 <legend class="l-simulation__legend">性別を選択</legend>
                 <div class="l-simulation__input-wrap">
                   <button type="button" class="l-simulation__input l-simulation__input--button js-button" data-gender="male" aria-pressed="false">
-                    <img src="images/simulation-icon-men.webp" alt="男性のアイコン" class="l-simulation__icon">男性
+                    <img src="images/simulation-icon-men.webp" alt="男性のアイコン" class="l-simulation__icon" />
+                    男性
                   </button>
                   <button type="button" class="l-simulation__input l-simulation__input--button js-button" data-gender="female" aria-pressed="false">
-                    <img src="images/simulation-icon-women.webp" alt="女性のアイコン" class="l-simulation__icon">女性
+                    <img src="images/simulation-icon-women.webp" alt="女性のアイコン" class="l-simulation__icon" />
+                    女性
                   </button>
                 </div>
               </fieldset>
-          
+
               <div class="l-simulation__submit-wrap">
                 <button type="submit" class="l-simulation__submit-button">結果を見る</button>
               </div>
@@ -188,7 +192,7 @@
 
       <section class="l-section">
         <div class="l-section__inner">
-          <h2 class="l-section__title"><img src="images/example.webp" alt="Example お客さまの見積もり例"></h2>
+          <h2 class="l-section__title"><img src="images/example.webp" alt="Example お客さまの見積もり例" /></h2>
           <div class="l-example">
             <p class="l-example__question">あなたはどんな見積もりをしましたか？</p>
             <div class="l-example__list no-pc">
@@ -200,31 +204,47 @@
                 <div class="l-example__contents">
                   <div class="l-example__top">
                     <div class="l-example__property">
-                      <div class="l-example__icon"><img src="images/example-icon-one.webp" alt="60代男性のアイコン"></div>
+                      <div class="l-example__icon"><img src="images/example-icon-one.webp" alt="60代男性のアイコン" /></div>
                       <p class="l-example__age">63歳 男性</p>
                     </div>
-                    <p class="l-example__description">子育てがひと段落。<br>家族に迷惑かけない程度に備えたい。</p>
+                    <p class="l-example__description">
+                      子育てがひと段落。
+                      <br />
+                      家族に迷惑かけない程度に備えたい。
+                    </p>
                   </div>
                   <div class="l-example__bottom">
                     <div class="l-example__insurance">
                       <ul class="l-example__insurance-list">
                         <li class="l-example__insurance-item">
                           <p class="l-example__insurance-title">入院日額</p>
-                          <p class="l-example__insurance-price">5,000<span class="l-example__insurance-yen">円</span></p>
+                          <p class="l-example__insurance-price">
+                            5,000
+                            <span class="l-example__insurance-yen">円</span>
+                          </p>
                         </li>
                         <li class="l-example__insurance-item">
                           <p class="l-example__insurance-title">がん診断一時金</p>
-                          <p class="l-example__insurance-price">100<span class="l-example__insurance-yen">万円</span></p>
+                          <p class="l-example__insurance-price">
+                            100
+                            <span class="l-example__insurance-yen">万円</span>
+                          </p>
                         </li>
                         <li class="l-example__insurance-item">
                           <p class="l-example__insurance-title">死亡保険金</p>
-                          <p class="l-example__insurance-price">200<span class="l-example__insurance-yen">万円</span></p>
+                          <p class="l-example__insurance-price">
+                            200
+                            <span class="l-example__insurance-yen">万円</span>
+                          </p>
                         </li>
                       </ul>
                       <div class="l-example__saving">
                         <p class="l-example__saving-star">しかも年間</p>
                         <div class="l-example__saving-text">
-                          <em class="l-example__saving-large-text">20</em><p class="l-example__saving-middle-text">.4</p><p class="l-example__saving-small-text">万円</p><p class="l-example__saving-normal-text">節約!!</p>
+                          <em class="l-example__saving-large-text">20</em>
+                          <p class="l-example__saving-middle-text">.4</p>
+                          <p class="l-example__saving-small-text">万円</p>
+                          <p class="l-example__saving-normal-text">節約!!</p>
                         </div>
                       </div>
                     </div>
@@ -239,27 +259,42 @@
                 <div class="l-example__contents">
                   <div class="l-example__top">
                     <div class="l-example__property">
-                      <div class="l-example__icon"><img src="images/example-icon-two.webp" alt="40代女性のアイコン"></div>
+                      <div class="l-example__icon"><img src="images/example-icon-two.webp" alt="40代女性のアイコン" /></div>
                       <p class="l-example__age">45歳 女性</p>
                     </div>
-                    <p class="l-example__description">加入中の保険は<br>初期ガンが対象外...<br>医療保険も一緒に最新に！</p>
+                    <p class="l-example__description">
+                      加入中の保険は
+                      <br />
+                      初期ガンが対象外...
+                      <br />
+                      医療保険も一緒に最新に！
+                    </p>
                   </div>
                   <div class="l-example__bottom">
                     <div class="l-example__insurance">
                       <ul class="l-example__insurance-list">
                         <li class="l-example__insurance-item">
                           <p class="l-example__insurance-title">入院日額</p>
-                          <p class="l-example__insurance-price">5,000<span class="l-example__insurance-yen">円</span></p>
+                          <p class="l-example__insurance-price">
+                            5,000
+                            <span class="l-example__insurance-yen">円</span>
+                          </p>
                         </li>
                         <li class="l-example__insurance-item">
                           <p class="l-example__insurance-title">がん診断一時金</p>
-                          <p class="l-example__insurance-price">100<span class="l-example__insurance-yen">万円</span></p>
+                          <p class="l-example__insurance-price">
+                            100
+                            <span class="l-example__insurance-yen">万円</span>
+                          </p>
                         </li>
                       </ul>
                       <div class="l-example__saving">
                         <p class="l-example__saving-star">しかも年間</p>
                         <div class="l-example__saving-text">
-                          <em class="l-example__saving-large-text">31</em><p class="l-example__saving-middle-text">.1</p><p class="l-example__saving-small-text">万円</p><p class="l-example__saving-normal-text">節約!!</p>
+                          <em class="l-example__saving-large-text">31</em>
+                          <p class="l-example__saving-middle-text">.1</p>
+                          <p class="l-example__saving-small-text">万円</p>
+                          <p class="l-example__saving-normal-text">節約!!</p>
                         </div>
                       </div>
                     </div>
@@ -274,27 +309,42 @@
                 <div class="l-example__contents">
                   <div class="l-example__top">
                     <div class="l-example__property">
-                      <div class="l-example__icon"><img src="images/example-icon-three.webp" alt="30代女性のアイコン"></div>
+                      <div class="l-example__icon"><img src="images/example-icon-three.webp" alt="30代女性のアイコン" /></div>
                       <p class="l-example__age">32歳 女性</p>
                     </div>
-                    <p class="l-example__description">30代で心配な<br>乳がんや子宮頸がんに<br>手厚い保障に変えました。</p>
+                    <p class="l-example__description">
+                      30代で心配な
+                      <br />
+                      乳がんや子宮頸がんに
+                      <br />
+                      手厚い保障に変えました。
+                    </p>
                   </div>
                   <div class="l-example__bottom">
                     <div class="l-example__insurance">
                       <ul class="l-example__insurance-list">
                         <li class="l-example__insurance-item">
                           <p class="l-example__insurance-title">がん診断一時金</p>
-                          <p class="l-example__insurance-price">100<span class="l-example__insurance-yen">万円</span></p>
+                          <p class="l-example__insurance-price">
+                            100
+                            <span class="l-example__insurance-yen">万円</span>
+                          </p>
                         </li>
                         <li class="l-example__insurance-item">
                           <p class="l-example__insurance-title">死亡保険金</p>
-                          <p class="l-example__insurance-price">200<span class="l-example__insurance-yen">万円</span></p>
+                          <p class="l-example__insurance-price">
+                            200
+                            <span class="l-example__insurance-yen">万円</span>
+                          </p>
                         </li>
                       </ul>
                       <div class="l-example__saving">
                         <p class="l-example__saving-star">しかも年間</p>
                         <div class="l-example__saving-text">
-                          <em class="l-example__saving-large-text">23</em><p class="l-example__saving-middle-text">.7</p><p class="l-example__saving-small-text">万円</p><p class="l-example__saving-normal-text">節約!!</p>
+                          <em class="l-example__saving-large-text">23</em>
+                          <p class="l-example__saving-middle-text">.7</p>
+                          <p class="l-example__saving-small-text">万円</p>
+                          <p class="l-example__saving-normal-text">節約!!</p>
                         </div>
                       </div>
                     </div>
@@ -321,10 +371,14 @@
 
               <div id="tabpanel1" class="l-example__contents" hidden="until-found">
                 <div class="l-example__top">
-                  <div class="l-example__icon"><img src="images/example-icon-one.webp" alt="60代男性のアイコン"></div>
+                  <div class="l-example__icon"><img src="images/example-icon-one.webp" alt="60代男性のアイコン" /></div>
                   <div class="l-example__property">
                     <p class="l-example__age">63歳 男性</p>
-                    <p class="l-example__description">子育てがひと段落。<br>家族に迷惑かけない程度に備えたい。</p>
+                    <p class="l-example__description">
+                      子育てがひと段落。
+                      <br />
+                      家族に迷惑かけない程度に備えたい。
+                    </p>
                   </div>
                 </div>
                 <div class="l-example__bottom">
@@ -332,21 +386,34 @@
                     <ul class="l-example__insurance-list">
                       <li class="l-example__insurance-item">
                         <p class="l-example__insurance-title">入院日額</p>
-                        <p class="l-example__insurance-price">5,000<span class="l-example__insurance-yen">円</span></p>
+                        <p class="l-example__insurance-price">
+                          5,000
+                          <span class="l-example__insurance-yen">円</span>
+                        </p>
                       </li>
                       <li class="l-example__insurance-item">
                         <p class="l-example__insurance-title">がん診断一時金</p>
-                        <p class="l-example__insurance-price">100<span class="l-example__insurance-yen">万円</span></p>
+                        <p class="l-example__insurance-price">
+                          100
+                          <span class="l-example__insurance-yen">万円</span>
+                        </p>
                       </li>
                       <li class="l-example__insurance-item">
                         <p class="l-example__insurance-title">死亡保険金</p>
-                        <p class="l-example__insurance-price">200<span class="l-example__insurance-yen">万円</span></p>
+                        <p class="l-example__insurance-price">
+                          200
+                          <span class="l-example__insurance-yen">万円</span>
+                        </p>
                       </li>
                     </ul>
                     <div class="l-example__saving">
                       <p class="l-example__saving-star">しかも</p>
                       <div class="l-example__saving-text">
-                        <p class="l-example__saving-small-text l-example__saving-small-text--blue">年間</p><em class="l-example__saving-large-text">20</em><p class="l-example__saving-middle-text">.4</p><p class="l-example__saving-small-text">万円</p><p class="l-example__saving-normal-text">節約!!</p>
+                        <p class="l-example__saving-small-text l-example__saving-small-text--blue">年間</p>
+                        <em class="l-example__saving-large-text">20</em>
+                        <p class="l-example__saving-middle-text">.4</p>
+                        <p class="l-example__saving-small-text">万円</p>
+                        <p class="l-example__saving-normal-text">節約!!</p>
                       </div>
                     </div>
                   </div>
@@ -354,10 +421,16 @@
               </div>
               <div id="tabpanel2" class="l-example__contents" hidden="until-found">
                 <div class="l-example__top">
-                  <div class="l-example__icon"><img src="images/example-icon-two.webp" alt="40代女性のアイコン"></div>
+                  <div class="l-example__icon"><img src="images/example-icon-two.webp" alt="40代女性のアイコン" /></div>
                   <div class="l-example__property">
                     <p class="l-example__age">45歳 女性</p>
-                    <p class="l-example__description">加入中の保険は<br>初期ガンが対象外...<br>医療保険も一緒に最新に！</p>
+                    <p class="l-example__description">
+                      加入中の保険は
+                      <br />
+                      初期ガンが対象外...
+                      <br />
+                      医療保険も一緒に最新に！
+                    </p>
                   </div>
                 </div>
                 <div class="l-example__bottom">
@@ -365,17 +438,27 @@
                     <ul class="l-example__insurance-list">
                       <li class="l-example__insurance-item">
                         <p class="l-example__insurance-title">入院日額</p>
-                        <p class="l-example__insurance-price">5,000<span class="l-example__insurance-yen">円</span></p>
+                        <p class="l-example__insurance-price">
+                          5,000
+                          <span class="l-example__insurance-yen">円</span>
+                        </p>
                       </li>
                       <li class="l-example__insurance-item">
                         <p class="l-example__insurance-title">がん診断一時金</p>
-                        <p class="l-example__insurance-price">100<span class="l-example__insurance-yen">万円</span></p>
+                        <p class="l-example__insurance-price">
+                          100
+                          <span class="l-example__insurance-yen">万円</span>
+                        </p>
                       </li>
                     </ul>
                     <div class="l-example__saving">
                       <p class="l-example__saving-star">しかも</p>
                       <div class="l-example__saving-text">
-                        <p class="l-example__saving-small-text l-example__saving-small-text--blue">年間</p><em class="l-example__saving-large-text">31</em><p class="l-example__saving-middle-text">.1</p><p class="l-example__saving-small-text">万円</p><p class="l-example__saving-normal-text">節約!!</p>
+                        <p class="l-example__saving-small-text l-example__saving-small-text--blue">年間</p>
+                        <em class="l-example__saving-large-text">31</em>
+                        <p class="l-example__saving-middle-text">.1</p>
+                        <p class="l-example__saving-small-text">万円</p>
+                        <p class="l-example__saving-normal-text">節約!!</p>
                       </div>
                     </div>
                   </div>
@@ -383,10 +466,16 @@
               </div>
               <div id="tabpanel3" class="l-example__contents" hidden="until-found">
                 <div class="l-example__top">
-                  <div class="l-example__icon"><img src="images/example-icon-three.webp" alt="30代女性のアイコン"></div>
+                  <div class="l-example__icon"><img src="images/example-icon-three.webp" alt="30代女性のアイコン" /></div>
                   <div class="l-example__property">
                     <p class="l-example__age">32歳 女性</p>
-                    <p class="l-example__description">30代で心配な<br>乳がんや子宮頸がんに<br>手厚い保障に変えました。</p>
+                    <p class="l-example__description">
+                      30代で心配な
+                      <br />
+                      乳がんや子宮頸がんに
+                      <br />
+                      手厚い保障に変えました。
+                    </p>
                   </div>
                 </div>
                 <div class="l-example__bottom">
@@ -394,75 +483,115 @@
                     <ul class="l-example__insurance-list">
                       <li class="l-example__insurance-item">
                         <p class="l-example__insurance-title">がん診断一時金</p>
-                        <p class="l-example__insurance-price">100<span class="l-example__insurance-yen">万円</span></p>
+                        <p class="l-example__insurance-price">
+                          100
+                          <span class="l-example__insurance-yen">万円</span>
+                        </p>
                       </li>
                       <li class="l-example__insurance-item">
                         <p class="l-example__insurance-title">死亡保険金</p>
-                        <p class="l-example__insurance-price">200<span class="l-example__insurance-yen">万円</span></p>
+                        <p class="l-example__insurance-price">
+                          200
+                          <span class="l-example__insurance-yen">万円</span>
+                        </p>
                       </li>
                     </ul>
                     <div class="l-example__saving">
                       <p class="l-example__saving-star">しかも</p>
                       <div class="l-example__saving-text">
-                        <p class="l-example__saving-small-text l-example__saving-small-text--blue">年間</p><em class="l-example__saving-large-text">23</em><p class="l-example__saving-middle-text">.7</p><p class="l-example__saving-small-text">万円</p><p class="l-example__saving-normal-text">節約!!</p>
+                        <p class="l-example__saving-small-text l-example__saving-small-text--blue">年間</p>
+                        <em class="l-example__saving-large-text">23</em>
+                        <p class="l-example__saving-middle-text">.7</p>
+                        <p class="l-example__saving-small-text">万円</p>
+                        <p class="l-example__saving-normal-text">節約!!</p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <p class="l-example__comment">＊節約額は年間平均保険料<sup class="l-example__mark">※</sup>から見積額を差し引いた金額です。<br class="no-pc">年間保険料に含まれている保険種類は弊社ではわかりかねます。</p>
+            <p class="l-example__comment">
+              ＊節約額は年間平均保険料
+              <sup class="l-example__mark">※</sup>
+              から見積額を差し引いた金額です。
+              <br class="no-pc" />
+              年間保険料に含まれている保険種類は弊社ではわかりかねます。
+            </p>
           </div>
         </div>
       </section>
 
       <section class="l-section">
         <div class="l-section__inner">
-          <h2 class="l-section__title"><img src="images/generation.webp" alt="Generation 年代別オススメ保険"></h2>
+          <h2 class="l-section__title"><img src="images/generation.webp" alt="Generation 年代別オススメ保険" /></h2>
           <div class="l-generation">
             <ul role="tablist" class="l-generation__list" aria-label="年代別オススメ保険の例">
               <li class="l-generation__item">
-                <figure class="l-generation__figure"><img src="images/20-icon.webp" alt="20代のイラスト"></figure>
-                <a role="tab" href="#gen20panel" id="gen20" class="l-generation__button" aria-selected="true" aria-controls="gen20panel">20<span class="l-generation__button-small-text">代</span></a>
+                <figure class="l-generation__figure"><img src="images/20-icon.webp" alt="20代のイラスト" /></figure>
+                <a role="tab" href="#gen20panel" id="gen20" class="l-generation__button" aria-selected="true" aria-controls="gen20panel">
+                  20
+                  <span class="l-generation__button-small-text">代</span>
+                </a>
               </li>
               <li class="l-generation__item">
-                <figure class="l-generation__figure"><img src="images/30-icon.webp" alt="30代のイラスト"></figure>
-                <a role="tab" href="#gen30panel" id="gen30" class="l-generation__button" aria-selected="true" aria-controls="gen30panel">30<span class="l-generation__button-small-text">代</span></a>
+                <figure class="l-generation__figure"><img src="images/30-icon.webp" alt="30代のイラスト" /></figure>
+                <a role="tab" href="#gen30panel" id="gen30" class="l-generation__button" aria-selected="true" aria-controls="gen30panel">
+                  30
+                  <span class="l-generation__button-small-text">代</span>
+                </a>
               </li>
               <li class="l-generation__item">
-                <figure class="l-generation__figure"><img src="images/40-icon.webp" alt="40代のイラスト"></figure>
-                <a role="tab" href="#gen40panel" id="gen40" class="l-generation__button" aria-selected="true" aria-controls="gen40panel">40<span class="l-generation__button-small-text">代</span></a>
+                <figure class="l-generation__figure"><img src="images/40-icon.webp" alt="40代のイラスト" /></figure>
+                <a role="tab" href="#gen40panel" id="gen40" class="l-generation__button" aria-selected="true" aria-controls="gen40panel">
+                  40
+                  <span class="l-generation__button-small-text">代</span>
+                </a>
               </li>
               <li class="l-generation__item">
-                <figure class="l-generation__figure"><img src="images/50-icon.webp" alt="50代のイラスト"></figure>
-                <a role="tab" href="#gen50panel" id="gen50" class="l-generation__button" aria-selected="true" aria-controls="gen50panel">50<span class="l-generation__button-small-text">代</span></a>
+                <figure class="l-generation__figure"><img src="images/50-icon.webp" alt="50代のイラスト" /></figure>
+                <a role="tab" href="#gen50panel" id="gen50" class="l-generation__button" aria-selected="true" aria-controls="gen50panel">
+                  50
+                  <span class="l-generation__button-small-text">代</span>
+                </a>
               </li>
             </ul>
-            <div id="gen20" class="generation__recommend-wrap" hidden="until-found">
-              <h3 class="generation__recommend-title"><span>20</span>代へオススメ</h3>
+            <div id="gen20panel" class="generation__recommend-wrap" hidden="until-found">
+              <h3 class="generation__recommend-title">
+                <span>20</span>
+                代へオススメ
+              </h3>
               <div class="generation__recommend-content">
-                <figure class="generation__recommend-img generation__recommend-img-20s"><img src="images/generation-rcm20s.webp" alt="医療保険"></figure>
+                <figure class="generation__recommend-img generation__recommend-img-20s"><img src="images/generation-rcm20s.webp" alt="医療保険" /></figure>
                 <p class="generation__recommend-txt">20代独身のうちは最低限の入院・手術に備えましょう。一般的に若い方は健康上のリスクが少なく、保険料を抑えられます。入院時には収入が減り、固定費＋医療費の支払いが必要と考えましょう。女性の場合は乳がんや子宮頸がんなどの女性疾病、妊娠・出産に備えて女性専用の保障が付いていると安心です。</p>
               </div>
             </div>
             <div id="gen30panel" class="generation__recommend-wrap" hidden="until-found">
-              <h3 class="generation__recommend-title"><span>30</span>代へオススメ</h3>
+              <h3 class="generation__recommend-title">
+                <span>30</span>
+                代へオススメ
+              </h3>
               <div class="generation__recommend-content generation__recommend-content-30s">
-                <figure class="generation__recommend-img generation__recommend-img-30s"><img src="images/generation-rcm30s.webp" alt="死亡保険・学資保険"></figure>
+                <figure class="generation__recommend-img generation__recommend-img-30s"><img src="images/generation-rcm30s.webp" alt="死亡保険・学資保険" /></figure>
                 <p class="generation__recommend-txt">30代は家族が増える時期です。結婚したあと、万が一のことがあった場合に安心できる保障を持っておきましょう。遺される家族の生活費・子供の教育資金は最低限残しておきたいです。保険料を抑えるなら、子供が小さい間に保障期間を絞った定期保険などが良いでしょう。</p>
               </div>
             </div>
             <div id="gen40panel" class="generation__recommend-wrap" hidden="until-found">
-              <h3 class="generation__recommend-title"><span>40</span>代へオススメ</h3>
+              <h3 class="generation__recommend-title">
+                <span>40</span>
+                代へオススメ
+              </h3>
               <div class="generation__recommend-content">
-                <figure class="generation__recommend-img generation__recommend-img-40s"><img src="images/generation-rcm40s.webp" alt="がん保険"></figure>
+                <figure class="generation__recommend-img generation__recommend-img-40s"><img src="images/generation-rcm40s.webp" alt="がん保険" /></figure>
                 <p class="generation__recommend-txt">40代はローンや教育資金で家計が圧迫されやすい時期です。今まで加入していた保険の見直しをすると良いでしょう。また、がん治療は長期になることもあり、治療費が高額になったり働けないことによる収入減のリスクもあるため医療保険とは別で用意しましょう。</p>
               </div>
             </div>
             <div id="gen50panel" class="generation__recommend-wrap" hidden="until-found">
-              <h3 class="generation__recommend-title"><span>50</span>代へオススメ</h3>
+              <h3 class="generation__recommend-title">
+                <span>50</span>
+                代へオススメ
+              </h3>
               <div class="generation__recommend-content generation__recommend-content-50s">
-                <figure class="generation__recommend-img generation__recommend-img-50s"><img src="images/generation-rcm50s.webp" alt="個人年金保険"></figure>
+                <figure class="generation__recommend-img generation__recommend-img-50s"><img src="images/generation-rcm50s.webp" alt="個人年金保険" /></figure>
                 <p class="generation__recommend-txt">50代では老後の資金を確保しましょう。早めに備えることで月々の負担も少なく資金準備ができます。今まで加入している保険も子育てがひと段落したら死亡保障は小さく、長く入ったままの保険は最新の保障へ見直す時期です。さまざまな病気の罹患率も年齢とともに上がってくるので三大疾病への備えなどもあると良いでしょう。</p>
               </div>
             </div>
@@ -472,28 +601,62 @@
 
       <section class="l-section">
         <div class="l-section__inner">
-          <h2 class="l-section__title"><img src="images/point.webp" alt="Point ３つのポイント"></h2>
+          <h2 class="l-section__title"><img src="images/point.webp" alt="Point ３つのポイント" /></h2>
           <div class="l-point">
-            <p class="l-point__text">定期的な見直しが保険料節約のコツ！<br>AI見積もりなら<br class="no-pc">あなたにピッタリな保険がみつかります。</p>
+            <p class="l-point__text">
+              定期的な見直しが保険料節約のコツ！
+              <br />
+              AI見積もりなら
+              <br class="no-pc" />
+              あなたにピッタリな保険がみつかります。
+            </p>
             <ul class="l-point__list">
               <li class="l-point__list-item">
-                <p class="l-point__circle">豊富な<br>プラン<br><span class="l-point__yellow-text"><small class="l-point__small-text">約</small>3,500!!*</span></p>
+                <p class="l-point__circle">
+                  豊富な
+                  <br />
+                  プラン
+                  <br />
+                  <span class="l-point__yellow-text">
+                    <small class="l-point__small-text">約</small>
+                    3,500!!*
+                  </span>
+                </p>
                 <div class="l-point__contents">
-                  <div class="l-point__contents-image"><img src="images/point-plan.webp" alt="プランを選んでいる男性のイラスト"></div>
-                  <p class="l-point__contents-text">保険代理店だからできる<br>充実のラインナップであなたにピッタリを提案！</p>
+                  <div class="l-point__contents-image"><img src="images/point-plan.webp" alt="プランを選んでいる男性のイラスト" /></div>
+                  <p class="l-point__contents-text">
+                    保険代理店だからできる
+                    <br />
+                    充実のラインナップであなたにピッタリを提案！
+                  </p>
                 </div>
               </li>
               <li class="l-point__list-item">
-                <p class="l-point__circle"><span class="l-point__yellow-text">AI</span>が<br>瞬時に<br>セレクト</p>
+                <p class="l-point__circle">
+                  <span class="l-point__yellow-text">AI</span>
+                  が
+                  <br />
+                  瞬時に
+                  <br />
+                  セレクト
+                </p>
                 <div class="l-point__contents">
-                  <div class="l-point__contents-image"><img src="images/point-select.webp" alt="プランを選んでいる男性のイラスト"></div>
-                  <p class="l-point__contents-text">チャットでカンタンな質問に答えるだけでAIが<br>最適なプランをスグに導く！<br></p>
+                  <div class="l-point__contents-image"><img src="images/point-select.webp" alt="プランを選んでいる男性のイラスト" /></div>
+                  <p class="l-point__contents-text">
+                    チャットでカンタンな質問に答えるだけでAIが
+                    <br />
+                    最適なプランをスグに導く！
+                    <br />
+                  </p>
                 </div>
               </li>
               <li class="l-point__list-item">
-                <p class="l-point__circle">まとめて<span class="l-point__yellow-text">節約</p>
+                <p class="l-point__circle">
+                  まとめて
+                  <span class="l-point__yellow-text">節約</span>
+                </p>
                 <div class="l-point__contents">
-                  <div class="l-point__contents-image"><img src="images/point-saving.webp" alt="節約している男性のイラスト"></div>
+                  <div class="l-point__contents-image"><img src="images/point-saving.webp" alt="節約している男性のイラスト" /></div>
                   <p class="l-point__contents-text">がん保険だけでなく医療保険や死亡保険など組み合わせで家計の節約をお手伝い！</p>
                 </div>
               </li>
@@ -505,25 +668,25 @@
 
       <section class="l-section">
         <div class="l-section__inner">
-          <h2 class="l-section__title"><img src="images/flow.webp" alt="Flow サービスの流れ"></h2>
+          <h2 class="l-section__title"><img src="images/flow.webp" alt="Flow サービスの流れ" /></h2>
           <div class="l-flow">
             <ul class="l-flow__list">
               <li class="l-flow__item">
-                <div class="l-flow__item-image"><img src="images/comment.webp" alt="吹き出しのアイコン"></div>
+                <div class="l-flow__item-image"><img src="images/comment.webp" alt="吹き出しのアイコン" /></div>
                 <div class="l-flow__item-text-wrapper">
                   <p class="l-flow__item-number">01</p>
                   <p class="l-flow__item-text">チャットで見積もり</p>
                 </div>
               </li>
               <li class="l-flow__item">
-                <div class="l-flow__item-image"><img src="images/check.webp" alt="資料と虫眼鏡のアイコン"></div>
+                <div class="l-flow__item-image"><img src="images/check.webp" alt="資料と虫眼鏡のアイコン" /></div>
                 <div class="l-flow__item-text-wrapper">
                   <p class="l-flow__item-number">02</p>
                   <p class="l-flow__item-text">プランをチェック</p>
                 </div>
               </li>
               <li class="l-flow__item">
-                <div class="l-flow__item-image"><img src="images/saport.webp" alt="サポートする女性のアイコン"></div>
+                <div class="l-flow__item-image"><img src="images/saport.webp" alt="サポートする女性のアイコン" /></div>
                 <div class="l-flow__item-text-wrapper">
                   <p class="l-flow__item-number">03</p>
                   <p class="l-flow__item-text">手厚くサポート</p>
@@ -537,34 +700,62 @@
 
       <section class="l-section">
         <div class="l-section__inner">
-          <h2 class="l-section__title"><img src="images/faq.webp" alt="FAQ よくある質問"></h2>
+          <h2 class="l-section__title"><img src="images/faq.webp" alt="FAQ よくある質問" /></h2>
           <div class="l-faq">
             <details class="l-faq__accordion" open>
-              <summary class="l-faq__summary"><p class="l-faq__summary-q">Q</p>持病があるので、見積もりしても申し込めないよね？</summary>
+              <summary class="l-faq__summary">
+                <p class="l-faq__summary-q">Q</p>
+                持病があるので、見積もりしても申し込めないよね？
+              </summary>
               <div class="l-faq__answer">
                 <p class="l-faq__answer-a">A</p>
-                <p>告知の内容によって、ご案内できる商品は変わります。<br>当社では約170商品、3,500プランの取り扱いがあるため、ご体調に合わせてお申し込みいただける商品をご提案することが可能です。お気軽にご相談ください。</p>
+                <p>
+                  告知の内容によって、ご案内できる商品は変わります。
+                  <br />
+                  当社では約170商品、3,500プランの取り扱いがあるため、ご体調に合わせてお申し込みいただける商品をご提案することが可能です。お気軽にご相談ください。
+                </p>
               </div>
             </details>
             <details class="l-faq__accordion">
-              <summary class="l-faq__summary"><p class="l-faq__summary-q">Q</p>見積もりしたら契約しなければいけないでしょ？</summary>
+              <summary class="l-faq__summary">
+                <p class="l-faq__summary-q">Q</p>
+                見積もりしたら契約しなければいけないでしょ？
+              </summary>
               <div class="l-faq__answer">
                 <p class="l-faq__answer-a">A</p>
-                <p>いいえ。<br>もちろんお申し込みまでのサポート体制は整っておりますが、本サービスはあくまで「お客さまにマッチする保険」を探すお手伝いをするサービスです。お申し込みされるかどうかは、みなさまのご判断にお任せしております。</p>
+                <p>
+                  いいえ。
+                  <br />
+                  もちろんお申し込みまでのサポート体制は整っておりますが、本サービスはあくまで「お客さまにマッチする保険」を探すお手伝いをするサービスです。お申し込みされるかどうかは、みなさまのご判断にお任せしております。
+                </p>
               </div>
             </details>
             <details class="l-faq__accordion">
-              <summary class="l-faq__summary"><p class="l-faq__summary-q">Q</p>見積書は郵送か何かで送られてくるの？</summary>
+              <summary class="l-faq__summary">
+                <p class="l-faq__summary-q">Q</p>
+                見積書は郵送か何かで送られてくるの？
+              </summary>
               <div class="l-faq__answer">
                 <p class="l-faq__answer-a">A</p>
-                <p>いいえ。<br>見積書は SMSでお送りしていますので、お手元の携帯電話でどこでも手軽にご確認いただけます。</p>
+                <p>
+                  いいえ。
+                  <br />
+                  見積書は SMSでお送りしていますので、お手元の携帯電話でどこでも手軽にご確認いただけます。
+                </p>
               </div>
             </details>
             <details class="l-faq__accordion">
-              <summary class="l-faq__summary"><p class="l-faq__summary-q">Q</p>がんになったことがあっても、入れる保険はありますか？</summary>
+              <summary class="l-faq__summary">
+                <p class="l-faq__summary-q">Q</p>
+                がんになったことがあっても、入れる保険はありますか？
+              </summary>
               <div class="l-faq__answer">
                 <p class="l-faq__answer-a">A</p>
-                <p>現在の治療内容や健康状態によってお申し込みいただける可能性がございます。<br>詳しい健康状態などお聞かせいただければと思いますので、まずはお問合せください。</p>
+                <p>
+                  現在の治療内容や健康状態によってお申し込みいただける可能性がございます。
+                  <br />
+                  詳しい健康状態などお聞かせいただければと思いますので、まずはお問合せください。
+                </p>
               </div>
             </details>
           </div>
@@ -573,16 +764,19 @@
 
       <section class="l-section">
         <div class="l-section__inner">
-          <h2 class="l-section__title"><img src="images/contact.webp" alt="Contact お問い合わせ"></h2>
+          <h2 class="l-section__title"><img src="images/contact.webp" alt="Contact お問い合わせ" /></h2>
           <div class="l-contact">
             <a href="tel:0120-407-672" class="l-contact__link">
-              <div class="l-contact__tel-icon"><img src="images/tel.webp" alt="電話のアイコン"></div>
+              <div class="l-contact__tel-icon"><img src="images/tel.webp" alt="電話のアイコン" /></div>
               <div class="l-contact__business-hours">
                 <p class="l-contact__tel">0120-407-672</p>
-                <p class="l-contact__receipt">受付時間　平日<em class="l-contact__time">10:00-19:00</em></p>
+                <p class="l-contact__receipt">
+                  受付時間　平日
+                  <em class="l-contact__time">10:00-19:00</em>
+                </p>
               </div>
             </a>
-            <p><img src="images/footer-logo.webp" alt="株式会社フィナンシャル・エージェンシー"></p>
+            <p><img src="images/footer-logo.webp" alt="株式会社フィナンシャル・エージェンシー" /></p>
           </div>
         </div>
       </section>
@@ -594,7 +788,19 @@
       <footer class="l-footer">
         <div class="l-footer__inner">
           <a href="" class="l-footer__page-top"></a>
-          <p class="l-footer__notes">※見積もり体験で表示されているプランは保障内容の一部です。<br>※告知などによってプラン内容が異なる場合がございます。<br>※見積もり結果の保険料と平均の年間保険料について、保障内容が類似しているとは限りませんので、節約できる金額については目安としていただく数値です。お客様におかれましては、保険料以外の契約条件も十分にご検討下さい。<br>※記載されている年間平均保険料は『生命保険文化センター調査報告令和元年度「生活保障に関する調査」（令和元年12月発行）』から引用しています。<br>上記の統計に含まれる保険種類については当社では分かりかねます。<br>※取扱商品数・プラン数、取扱保険会社数はがん保険だけでなく、弊社が取り扱いしている全保険種類の合計で表示しています。</p>
+          <p class="l-footer__notes">
+            ※見積もり体験で表示されているプランは保障内容の一部です。
+            <br />
+            ※告知などによってプラン内容が異なる場合がございます。
+            <br />
+            ※見積もり結果の保険料と平均の年間保険料について、保障内容が類似しているとは限りませんので、節約できる金額については目安としていただく数値です。お客様におかれましては、保険料以外の契約条件も十分にご検討下さい。
+            <br />
+            ※記載されている年間平均保険料は『生命保険文化センター調査報告令和元年度「生活保障に関する調査」（令和元年12月発行）』から引用しています。
+            <br />
+            上記の統計に含まれる保険種類については当社では分かりかねます。
+            <br />
+            ※取扱商品数・プラン数、取扱保険会社数はがん保険だけでなく、弊社が取り扱いしている全保険種類の合計で表示しています。
+          </p>
         </div>
         <p class="l-footer__copy">COPYRIGHT © 2021 FINANCIAL AGENCY. All rights reserved.</p>
       </footer>

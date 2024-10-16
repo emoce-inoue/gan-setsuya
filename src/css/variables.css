@@ -44,7 +44,7 @@
   --color-bluescale-100: #004098;
   --color-bluescale-200: #002769;
   --background-base: var(--color-grayscale-0);
-  --background-main: repeating-linear-gradient(-45deg, var(--color-yellowscale-200), var(--color-yellowscale-200) 5px, var(--color-yellowscale-100) 5px, var(--color-yellowscale-100) 10px);
+  --background-main: #fff6e9;
   --font-base: var(--color-bluescale-100);
   --underline-base: color-mix(in srgb, currentcolor, transparent 40%);
 

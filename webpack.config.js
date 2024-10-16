@@ -8,14 +8,14 @@ const glob = require('glob');
 const htmlPlugins = glob
   .sync('./src/**/*.html') // サブディレクトリ含む
   .concat(glob.sync('./src/*.html')) // 直下のファイルも対象に
-  .map((file) => {
-    return new HtmlWebpackPlugin({
-      filename: path.relative('./src', file),
-      template: file,
-      inject: 'body',
-    });
-  });
-
+  .map(
+    (file) =>
+      new HtmlWebpackPlugin({
+        filename: path.relative('./src', file),
+        template: file,
+        inject: 'body',
+      }),
+  );
 
 module.exports = {
   mode: 'production',

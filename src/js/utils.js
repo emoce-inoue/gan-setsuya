@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const buttons = document.querySelectorAll('.js-button');
   if (buttons.length) {
-    buttons.forEach(button => {
+    buttons.forEach((button) => {
       button.addEventListener('click', () => {
         const isPressed = button.getAttribute('aria-pressed') === 'true';
         button.setAttribute('aria-pressed', !isPressed);
