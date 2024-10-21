@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const fixedItem = document.querySelector('.l-fixed-item');
   if (fixedItem) {
     const fixedItemHeight = fixedItem.offsetHeight;
-    const links = document.querySelectorAll('.scroll-link');
+    const links = document.querySelectorAll('.js-scroll-link');
     links.forEach((link) => {
       link.addEventListener('click', (event) => {
         event.preventDefault();
@@ -48,16 +48,6 @@ document.addEventListener('DOMContentLoaded', () => {
           top: targetPosition,
           behavior: 'smooth',
         });
-      });
-    });
-  }
-
-  const buttons = document.querySelectorAll('.js-button');
-  if (buttons.length) {
-    buttons.forEach((button) => {
-      button.addEventListener('click', () => {
-        const isPressed = button.getAttribute('aria-pressed') === 'true';
-        button.setAttribute('aria-pressed', !isPressed);
       });
     });
   }

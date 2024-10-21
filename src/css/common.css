@@ -3,17 +3,15 @@
   display: none !important;
 }
 
-@media only screen and (min-width: 768px) {
-  .no-sp {
-    display: grid !important;
-  }
-}
-
 .no-pc {
   display: grid !important;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
+  .no-sp {
+    display: grid !important;
+  }
+
   .no-pc {
     display: none !important;
   }
@@ -29,7 +27,7 @@
   position: sticky;
   inset-block-start: 0;
   background-color: var(--color-grayscale-0);
-  z-index: var(--default-z-index);
+  z-index: var(--menu-z-index);
 }
 
 .l-header__inner {
@@ -52,6 +50,7 @@
   z-index: var(--menu-z-index);
   visibility: hidden;
   opacity: 0;
+  overflow-y: scroll;
 }
 
 .l-drawer[data-active='true'] {
@@ -120,7 +119,7 @@
   justify-self: end;
   inline-size: 1em;
   aspect-ratio: 1;
-  background: var(--right-triangle) no-repeat center / contain;
+  background: var(--right-triangle-blue) no-repeat center / contain;
 }
 
 .l-drawer__bottom {

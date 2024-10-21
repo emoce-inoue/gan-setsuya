@@ -69,6 +69,7 @@
   letter-spacing: unset;
   text-align: unset;
   text-transform: unset;
+  appearance: unset;
 }
 
 :where(ul, ol) {
@@ -110,6 +111,16 @@
   font-style: normal;
 }
 
-summary::-webkit-details-marker {
+:where(fieldset) {
+  margin: unset;
+  padding: unset;
+  border: unset;
+}
+
+:where(summary) {
+  list-style: none;
+}
+
+:where(summary::-webkit-details-marker) {
   display: none;
 }
