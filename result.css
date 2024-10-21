@@ -194,7 +194,7 @@
   list-style: none;
 }
 
-:where(summary::-webkit-details-marker) {
+summary::-webkit-details-marker {
   display: none;
 }
 
@@ -536,6 +536,7 @@
   }
 
   .l-header__sns-item {
+    display: grid;
     max-inline-size: 27px;
   }
 
