@@ -55,4 +55,3 @@ document.addEventListener('DOMContentLoaded', () => {
     countUpObserver.observe(targetElem);
   });
 });
-

@@ -3,66 +3,66 @@ import { hideDrawer } from './common.js';
 document.addEventListener('DOMContentLoaded', () => {
   // メニュークリック時、ページ内リンクのためにメニューを閉じる
   const menuItem = document.querySelectorAll('.js-menu-link');
-  menuItem.forEach(link => {
+  menuItem.forEach((link) => {
     if (link) {
       link.addEventListener('click', hideDrawer);
     }
   });
   // simulation
   const genderButtons = document.querySelectorAll('.l-simulation__input--gender');
-  genderButtons.forEach(button => {
+  genderButtons.forEach((button) => {
     button.addEventListener('click', () => {
-      genderButtons.forEach(btn => {
+      genderButtons.forEach((btn) => {
         btn.classList.remove('l-simulation__input--active');
       });
       button.classList.add('l-simulation__input--active');
     });
   });
   // example
-  const exampleTabItems = document.querySelectorAll(".l-example__tab-item");
-  const exampleVisibilityPanels = document.querySelectorAll(".l-example__visibility");
+  const exampleTabItems = document.querySelectorAll('.l-example__tab-item');
+  const exampleVisibilityPanels = document.querySelectorAll('.l-example__visibility');
 
   exampleTabItems.forEach((tab) => {
-    tab.addEventListener("click", () => {
+    tab.addEventListener('click', () => {
       exampleTabItems.forEach((item) => {
-        item.setAttribute("aria-selected", "false");
+        item.setAttribute('aria-selected', 'false');
       });
 
-      tab.setAttribute("aria-selected", "true");
+      tab.setAttribute('aria-selected', 'true');
 
-      const targetId = tab.getAttribute("aria-controls");
+      const targetId = tab.getAttribute('aria-controls');
 
       exampleVisibilityPanels.forEach((panel) => {
-        panel.setAttribute("hidden", "until-found");
+        panel.setAttribute('hidden', 'until-found');
       });
 
       const targetPanel = document.getElementById(targetId);
       if (targetPanel) {
-        targetPanel.parentElement.removeAttribute("hidden");
+        targetPanel.parentElement.removeAttribute('hidden');
       }
     });
   });
   // generation
-  const generationTabButtons = document.querySelectorAll(".l-generation__button");
-  const generationContentPanels = document.querySelectorAll(".l-generation__visibility");
+  const generationTabButtons = document.querySelectorAll('.l-generation__button');
+  const generationContentPanels = document.querySelectorAll('.l-generation__visibility');
 
   generationTabButtons.forEach((button) => {
-    button.addEventListener("click", () => {
+    button.addEventListener('click', () => {
       generationTabButtons.forEach((btn) => {
-        btn.setAttribute("aria-selected", "false");
+        btn.setAttribute('aria-selected', 'false');
       });
 
-      button.setAttribute("aria-selected", "true");
+      button.setAttribute('aria-selected', 'true');
 
-      const targetId = button.getAttribute("aria-controls");
+      const targetId = button.getAttribute('aria-controls');
 
       generationContentPanels.forEach((panel) => {
-        panel.setAttribute("hidden", "until-found");
+        panel.setAttribute('hidden', 'until-found');
       });
 
       const targetPanel = document.getElementById(targetId);
       if (targetPanel) {
-        targetPanel.parentElement.removeAttribute("hidden");
+        targetPanel.parentElement.removeAttribute('hidden');
       }
     });
   });

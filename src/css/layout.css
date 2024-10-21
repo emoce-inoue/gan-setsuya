@@ -38,7 +38,7 @@
 .l-mv__comment {
   position: relative;
   margin-block: 16px;
-  padding-inline: calc(11* var(--fluid-ratio-min));
+  padding-inline: calc(11 * var(--fluid-ratio-min));
   font-size: calc(8 * var(--rem-ratio));
   text-align: end;
   z-index: var(--front-z-index);
@@ -477,6 +477,7 @@
   background: url('../images/star.webp') no-repeat center / cover;
   rotate: -7deg;
 }
+
 .l-example__saving {
   position: relative;
 }
@@ -517,7 +518,7 @@
   vertical-align: middle;
 }
 
-.l-generation__button[aria-selected="true"] {
+.l-generation__button[aria-selected='true'] {
   background-color: var(--color-bluescale-300);
   color: var(--color-grayscale-0);
 }
@@ -534,7 +535,7 @@
   background: var(--arrow-blue-bottom) no-repeat center / contain;
 }
 
-.l-generation__button[aria-selected="true"]::after {
+.l-generation__button[aria-selected='true']::after {
   background: none;
 }
 
@@ -693,7 +694,7 @@
 .l-point__comment {
   inline-size: 90%;
   margin-inline: auto;
-  font-size: calc(8* var(--rem-ratio));
+  font-size: calc(8 * var(--rem-ratio));
   font-weight: var(--font-normal);
 }
 
@@ -729,11 +730,11 @@
   inset-inline-start: 7%;
   display: grid;
   color: var(--color-blue-opacity);
-  font-size: calc(60* var(--rem-ratio));
+  font-size: calc(60 * var(--rem-ratio));
   line-height: var(--leading-tight);
 }
 
-.l-flow__item:not(:last-child):after {
+.l-flow__item:not(:last-child)::after {
   content: '';
   position: absolute;
   inset-inline: 0;
@@ -745,7 +746,7 @@
 }
 
 .l-flow__comment {
-  font-size: calc(8* var(--rem-ratio));
+  font-size: calc(8 * var(--rem-ratio));
 }
 
 .l-faq__summary {
@@ -766,7 +767,7 @@
   align-self: center;
   color: var(--color-orangescale-100);
   font-family: var(--font-roboto);
-  font-size: calc(67* var(--rem-ratio));
+  font-size: calc(67 * var(--rem-ratio));
   line-height: var(--leading-tight);
 }
 
@@ -804,7 +805,7 @@
   align-self: center;
   color: var(--color-blue-opacity);
   font-family: var(--font-roboto);
-  font-size: calc(67* var(--rem-ratio));
+  font-size: calc(67 * var(--rem-ratio));
   line-height: var(--leading-tight);
 }
 
@@ -829,18 +830,18 @@
 
 .l-contact__tel {
   font-family: var(--font-roboto);
-  font-size: calc(32* var(--rem-ratio));
+  font-size: calc(32 * var(--rem-ratio));
   line-height: var(--leading-tight);
 }
 
 .l-contact__receipt {
-  font-size: calc(10* var(--rem-ratio));
+  font-size: calc(10 * var(--rem-ratio));
   letter-spacing: var(--tracking-tight);
 }
 
 .l-contact__time {
   font-family: var(--font-roboto);
-  font-size: calc(19* var(--rem-ratio));
+  font-size: calc(19 * var(--rem-ratio));
 }
 
 .l-contact__business-hours {
@@ -862,7 +863,7 @@
 
 .l-footer__notes {
   font-weight: var(--font-normal);
-  font-size: calc(8* var(--rem-ratio));
+  font-size: calc(8 * var(--rem-ratio));
 }
 
 .l-footer__inner {
@@ -872,7 +873,7 @@
   inline-size: 90%;
   margin-inline: auto;
   margin-block-end: 163px;
-  padding-inline: calc(11* var(--fluid-ratio-min));
+  padding-inline: calc(11 * var(--fluid-ratio-min));
 }
 
 .l-footer__page-top {
@@ -890,7 +891,7 @@
   inline-size: 90%;
   margin-inline: auto;
   color: var(--color-grayscale-0);
-  font-size: calc(12* var(--rem-ratio));
+  font-size: calc(12 * var(--rem-ratio));
   font-weight: var(--font-normal);
 }
 
@@ -926,7 +927,7 @@
     max-inline-size: 1000px;
     margin-inline: auto;
     padding-block: 80px 0;
-    padding-inline: calc(11* var(--fluid-ratio-max));
+    padding-inline: calc(11 * var(--fluid-ratio-max));
   }
 
   .l-mv__background {
@@ -942,7 +943,7 @@
   }
 
   .l-mv__comment {
-    font-size: calc(14* var(--rem-ratio));
+    font-size: calc(14 * var(--rem-ratio));
   }
 
   .l-section__title--simulation {
@@ -953,7 +954,7 @@
   .l-section__title--example {
     max-inline-size: 360px;
     margin-block-end: 37px;
-}
+  }
 
   .l-simulation {
     max-inline-size: 464px;
@@ -996,7 +997,7 @@
     color: var(--color-grayscale-0);
   }
 
-  .l-example__tab-item[aria-selected="true"] {
+  .l-example__tab-item[aria-selected='true'] {
     background-color: var(--color-orangescale-200);
   }
 
@@ -1035,7 +1036,7 @@
     background-color: revert;
     border: revert;
     border-radius: revert;
-    font-size: calc(20* var(--rem-ratio));
+    font-size: calc(20 * var(--rem-ratio));
   }
 
   .l-example__description {
@@ -1053,15 +1054,15 @@
   }
 
   .l-example__insurance-title {
-    font-size: calc(16* var(--rem-ratio));
+    font-size: calc(16 * var(--rem-ratio));
   }
 
   .l-example__insurance-price {
-    font-size: calc(54* var(--rem-ratio));
+    font-size: calc(54 * var(--rem-ratio));
   }
 
   .l-example__insurance-yen {
-    font-size: calc(17* var(--rem-ratio));
+    font-size: calc(17 * var(--rem-ratio));
   }
 
   .l-example__insurance-item:not(:last-child)::after {
@@ -1076,7 +1077,7 @@
 
   .l-example__saving-star {
     background: url('../images/star.webp') no-repeat center / contain;
-    font-size: calc(25* var(--rem-ratio));
+    font-size: calc(25 * var(--rem-ratio));
   }
 
   .l-example__saving-small-text--blue {
@@ -1084,20 +1085,20 @@
   }
 
   .l-example__saving-large-text {
-    font-size: calc(92* var(--rem-ratio));
+    font-size: calc(92 * var(--rem-ratio));
   }
 
   .l-example__saving-middle-text {
-    font-size: calc(60* var(--rem-ratio));
+    font-size: calc(60 * var(--rem-ratio));
   }
 
   .l-example__saving-small-text {
-    font-size: calc(26* var(--rem-ratio));
+    font-size: calc(26 * var(--rem-ratio));
     writing-mode: revert;
   }
 
   .l-example__saving-normal-text {
-    font-size: calc(57* var(--rem-ratio));
+    font-size: calc(57 * var(--rem-ratio));
   }
 
   .l-example__saving-number {
@@ -1110,7 +1111,7 @@
   }
 
   .l-example__comment {
-    font-size: calc(14* var(--rem-ratio));
+    font-size: calc(14 * var(--rem-ratio));
   }
 
   .l-section__inner--example {
@@ -1135,11 +1136,11 @@
     padding-inline: 16px;
     border: 3px solid;
     box-shadow: 5px 4px 0 var(--color-bluescale-300);
-    font-size: calc(43* var(--rem-ratio));
+    font-size: calc(43 * var(--rem-ratio));
   }
 
   .l-generation__button-small-text {
-    font-size: calc(22* var(--rem-ratio));
+    font-size: calc(22 * var(--rem-ratio));
   }
 
   .l-generation__button::after {
@@ -1147,11 +1148,11 @@
   }
 
   .l-generation__recommend-title-age {
-    font-size: calc(58* var(--rem-ratio));
+    font-size: calc(58 * var(--rem-ratio));
   }
 
   .l-generation__recommend-title {
-    font-size: calc(30* var(--rem-ratio));
+    font-size: calc(30 * var(--rem-ratio));
     text-align: start;
   }
 
@@ -1166,7 +1167,7 @@
   }
 
   .l-generation__recommend-text {
-    font-size: calc(18* var(--rem-ratio));
+    font-size: calc(18 * var(--rem-ratio));
   }
 
   .l-section__inner--generation {
@@ -1180,7 +1181,7 @@
 
   .l-point__text {
     margin-block-end: 138px;
-    font-size: calc(25* var(--rem-ratio));
+    font-size: calc(25 * var(--rem-ratio));
   }
 
   .l-point {
@@ -1211,7 +1212,7 @@
   }
 
   .l-point__contents-text {
-    font-size: calc(18* var(--rem-ratio));
+    font-size: calc(18 * var(--rem-ratio));
   }
 
   .l-point__circle {
@@ -1228,7 +1229,7 @@
 
   .l-point__comment {
     inline-size: 100%;
-    font-size: calc(14* var(--rem-ratio));
+    font-size: calc(14 * var(--rem-ratio));
   }
 
   .l-section__inner--point {
@@ -1265,7 +1266,7 @@
     position: relative;
   }
 
-  .l-flow__item:not(:last-child):after {
+  .l-flow__item:not(:last-child)::after {
     inset-block: 40%;
     inset-inline-end: -32px;
     inset-inline-start: revert;
@@ -1274,7 +1275,7 @@
   }
 
   .l-flow__comment {
-    font-size: calc(15* var(--rem-ratio));
+    font-size: calc(15 * var(--rem-ratio));
   }
 
   .l-section__title--faq {
@@ -1291,7 +1292,7 @@
   .l-faq__summary-text,
   .l-faq__answer-text {
     inline-size: 97%;
-    font-size: calc(18* var(--rem-ratio));
+    font-size: calc(18 * var(--rem-ratio));
   }
 
   .l-faq__summary {
@@ -1326,15 +1327,15 @@
   }
 
   .l-contact__tel {
-    font-size: calc(58* var(--rem-ratio));
+    font-size: calc(58 * var(--rem-ratio));
   }
 
   .l-contact__receipt {
-    font-size: calc(18* var(--rem-ratio));
+    font-size: calc(18 * var(--rem-ratio));
   }
 
   .l-contact__time {
-    font-size: calc(34* var(--rem-ratio));
+    font-size: calc(34 * var(--rem-ratio));
   }
 
   .l-contact__link {
@@ -1348,7 +1349,7 @@
   }
 
   .l-footer__notes {
-    font-size: calc(16* var(--rem-ratio));
+    font-size: calc(16 * var(--rem-ratio));
   }
 
   .l-footer__inner {
@@ -1361,7 +1362,7 @@
   }
 
   .l-footer__copy {
-    font-size: calc(15* var(--rem-ratio));
+    font-size: calc(15 * var(--rem-ratio));
     text-align: center;
   }
 

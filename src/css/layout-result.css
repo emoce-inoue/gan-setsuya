@@ -556,8 +556,8 @@
 
   .l-section__image {
     inset-inline-end: -15%;
-      inset-block-end: -50px;
-      max-inline-size: 146px;
+    inset-block-end: -50px;
+    max-inline-size: 146px;
   }
 
   .l-section__text--point {
@@ -583,15 +583,15 @@
   }
 
   .l-section__cta-text {
-    font-size: calc(16* var(--rem-ratio));
+    font-size: calc(16 * var(--rem-ratio));
   }
 
   .l-section__cta-large-text {
-    font-size: calc(18* var(--rem-ratio));
+    font-size: calc(18 * var(--rem-ratio));
   }
 
   .l-section__cta-strong-text {
-    font-size: calc(24* var(--rem-ratio));
+    font-size: calc(24 * var(--rem-ratio));
   }
 
   .l-section__inner--cta {

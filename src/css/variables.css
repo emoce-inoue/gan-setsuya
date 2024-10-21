@@ -37,26 +37,25 @@
   --color-grayscale-100: #e8e8e8;
   --color-grayscale-1000: #000;
   --color-yellowscale-100: #fff6cc;
-  --color-yellowscale-150: #FFF0A9;
+  --color-yellowscale-150: #fff0a9;
   --color-yellowscale-200: #fff1ac;
   --color-yellowscale-300: #ffe077;
   --color-bluescale-10: #dcf0f9;
   --color-bluescale-50: #e1f6ff;
   --color-bluescale-100: #004098;
   --color-bluescale-200: #002769;
-  --color-bluescale-300: #0E2B67;
-  --color-orangescale-50: #FDEFE1;
-  --color-orangescale-100: rgb(242 138 42 / 0.25);
-  --color-orangescale-200: #F28A2A;
-  --color-shadow-orange: #BCAD98;
-  --color-blue-opacity: rgb(14 43 103 / 0.25);
+  --color-bluescale-300: #0e2b67;
+  --color-orangescale-50: #fdefe1;
+  --color-orangescale-100: rgb(242 138 42 / 25%);
+  --color-orangescale-200: #f28a2a;
+  --color-shadow-orange: #bcad98;
+  --color-blue-opacity: rgb(14 43 103 / 25%);
   --background-base: var(--color-grayscale-0);
   --background-main: #fff6e9;
-  --background-mv: 180deg, rgb(255 251 246 / 1), rgb(255 246 233 / 1) 76%;
-  --background-mv-pc: 180deg, rgb(255 251 246 / 1), rgb(255 246 233 / 1) 45%;
-  --generation-title-border: 90deg, rgb(255 251 246 / 1), rgb(255 246 233 / 1) 45%;
+  --background-mv: 180deg, rgb(255 251 246 / 100%), rgb(255 246 233 / 100%) 76%;
+  --background-mv-pc: 180deg, rgb(255 251 246 / 100%), rgb(255 246 233 / 100%) 45%;
+  --generation-title-border: 90deg, rgb(255 251 246 / 100%), rgb(255 246 233 / 100%) 45%;
   --font-base: var(--color-bluescale-300);
-  /* --font-base: var(--color-bluescale-100); */
   --underline-base: color-mix(in srgb, currentcolor, transparent 40%);
 
   /* z-index */

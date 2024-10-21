@@ -5,7 +5,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const glob = require('glob');
 
 // HTMLファイルを動的に取得し、必要なバンドルを割り当てる
-const htmlPlugins = glob.sync('./src/**/*.html').map(file => {
+const htmlPlugins = glob.sync('./src/**/*.html').map((file) => {
   const filename = path.relative('./src', file);
   const chunks = filename.includes('result') ? ['result'] : ['simulation'];
   return new HtmlWebpackPlugin({
