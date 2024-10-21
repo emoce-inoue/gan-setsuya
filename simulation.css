@@ -1669,6 +1669,8 @@ summary::-webkit-details-marker {
   }
 
   .l-example__saving-small-text {
+    align-self: revert;
+    padding-inline-end: revert;
     font-size: calc(26 * var(--rem-ratio));
     writing-mode: revert;
   }
