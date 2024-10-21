@@ -237,6 +237,7 @@
   }
 
   .l-header__sns-item {
+    display: grid;
     max-inline-size: 27px;
   }
 

@@ -121,6 +121,6 @@
   list-style: none;
 }
 
-:where(summary::-webkit-details-marker) {
+summary::-webkit-details-marker {
   display: none;
 }
