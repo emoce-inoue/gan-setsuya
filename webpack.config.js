@@ -4,24 +4,27 @@ const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const glob = require('glob');
 
-// 動的にHTMLファイルを読み込む設定
-const htmlPlugins = glob
-  .sync('./src/**/*.html') // サブディレクトリ含む
-  .concat(glob.sync('./src/*.html')) // 直下のファイルも対象に
-  .map(
-    (file) =>
-      new HtmlWebpackPlugin({
-        filename: path.relative('./src', file),
-        template: file,
-        inject: 'body',
-      }),
-  );
+// HTMLファイルを動的に取得し、必要なバンドルを割り当てる
+const htmlPlugins = glob.sync('./src/**/*.html').map(file => {
+  const filename = path.relative('./src', file);
+  const chunks = filename.includes('result') ? ['result'] : ['simulation'];
+  return new HtmlWebpackPlugin({
+    filename,
+    template: file,
+    inject: 'body',
+    chunks,
+    scriptLoading: 'module',
+  });
+});
 
 module.exports = {
   mode: 'production',
-  entry: './src/js/index.js',
+  entry: {
+    simulation: ['./src/js/utils.js', './src/js/common.js', './src/js/simulation.js', './src/css/simulation.css'],
+    result: ['./src/js/utils.js', './src/js/common.js', './src/js/result.js', './src/css/result.css'],
+  },
   output: {
-    filename: 'bundle.js',
+    filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
@@ -32,7 +35,7 @@ module.exports = {
     hot: true,
     open: true,
     watchFiles: {
-      paths: ['src/**/*.html'],
+      paths: ['src/**/*.html', 'src/**/*.css', 'src/**/*.js'],
       options: {
         usePolling: true,
       },
@@ -68,7 +71,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'style.css',
+      filename: '[name].css',
     }),
     ...htmlPlugins,
     new CopyWebpackPlugin({
