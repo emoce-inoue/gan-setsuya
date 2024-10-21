@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600&family=Roboto:ital,wght@0,700;1,700&display=swap" media="print" onload="this.media='all'" />
   </head>
   <body id="body">
-    <main class="l-main l-simulation">
+    <main class="l-main">
       <header class="l-header l-fixed-item">
         <nav class="l-header__inner">
           <h1 class="l-header__logo">
@@ -107,7 +107,7 @@
       <section class="l-mv">
         <div class="l-mv__background">
         </div>
-        <div class="l-mv__inner">
+        <div class="l-mv__inner js-fade">
           <picture>
             <source media="(min-width:768px)" srcset="images/mv-pc.webp" />
             <img src="images/mv.webp" alt="がん保険のピッタリが見つかる!保険はAIで手軽に探そう！ 取扱保険会社約50社 取扱商品数約170" />
@@ -125,7 +125,7 @@
       </section>
 
       <section id="simulation" class="l-section l-section--background">
-        <div class="l-section__inner l-section__inner--simulation">
+        <div class="l-section__inner l-section__inner--simulation js-fadeup">
           <h2 class="l-section__title l-section__title--simulation"><img src="images/simulation.webp" alt="Simulation 3秒マッチング体験" /></h2>
           <div class="l-simulation">
             <form id="simulationForm" action="newActionURL" method="post">
@@ -215,7 +215,7 @@
       </section>
 
       <section id="example" class="l-section">
-        <div class="l-section__inner l-section__inner--example">
+        <div class="l-section__inner l-section__inner--example js-fadeup">
           <h2 class="l-section__title l-section__title--example"><img src="images/example.webp" alt="Example お客さまの見積もり例" /></h2>
           <div class="l-example">
             <div class="l-example__question">
@@ -576,7 +576,7 @@
       </section>
 
       <section id="generation" class="l-section l-section--background">
-        <div class="l-section__inner l-section__inner--generation">
+        <div class="l-section__inner l-section__inner--generation js-fadeup">
           <h2 class="l-section__title l-section__title--generation"><img src="images/generation.webp" alt="Generation 年代別オススメ保険" /></h2>
           <div class="l-generation">
             <ul role="tablist" class="l-generation__list" aria-label="年代別オススメ保険の例">
@@ -658,7 +658,7 @@
       </section>
 
       <section id="point" class="l-section">
-        <div class="l-section__inner l-section__inner--point">
+        <div class="l-section__inner l-section__inner--point js-fadeup">
           <h2 class="l-section__title l-section__title--point"><img src="images/point.webp" alt="Point ３つのポイント" /></h2>
           <div class="l-point">
             <p class="l-point__text">
@@ -723,7 +723,7 @@
       </section>
 
       <section id="flow" class="l-section">
-        <div class="l-section__inner l-section__inner--flow">
+        <div class="l-section__inner l-section__inner--flow js-fadeup">
           <h2 class="l-section__title l-section__title--flow"><img src="images/flow.webp" alt="Flow サービスの流れ" /></h2>
           <div class="l-flow">
             <ul class="l-flow__list">
@@ -755,7 +755,7 @@
       </section>
 
       <section id="faq" class="l-section">
-        <div class="l-section__inner l-section__inner--faq">
+        <div class="l-section__inner l-section__inner--faq js-fadeup">
           <h2 class="l-section__title l-section__title--faq"><img src="images/faq.webp" alt="FAQ よくある質問" /></h2>
           <div class="l-faq">
             <details class="l-faq__accordion" open>
@@ -819,7 +819,7 @@
       </section>
 
       <section class="l-section">
-        <div class="l-section__inner l-section__inner--contact">
+        <div class="l-section__inner l-section__inner--contact js-fadeup">
           <h2 class="l-section__title l-section__title--contanct"><img src="images/contact.webp" alt="Contact お問い合わせ" /></h2>
           <div class="l-contact">
             <a href="tel:0120-407-672" class="l-contact__link">
@@ -838,7 +838,7 @@
       </section>
 
       <footer class="l-footer">
-        <div class="l-footer__inner">
+        <div class="l-footer__inner js-fadeup">
           <a href="#body" class="l-footer__page-top js-scroll-link">
             <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="#0E2B67"/><path d="M21 53L40.5 28L60 53" stroke="white" stroke-width="2.26667" stroke-linecap="round"/></svg>
           </a>
