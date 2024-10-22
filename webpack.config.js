@@ -14,6 +14,7 @@ const htmlPlugins = glob.sync('./src/**/*.html').map((file) => {
     inject: 'body',
     chunks,
     scriptLoading: 'module',
+    minify: false,
   });
 });
 
