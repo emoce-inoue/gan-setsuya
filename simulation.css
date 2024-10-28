@@ -1489,11 +1489,13 @@ summary::-webkit-details-marker {
   transition: opacity var(--speed-normal) ease-in-out;
   z-index: var(--default-z-index);
   opacity: 0;
+  visibility: hidden;
   pointer-events: none;
 }
 
 .l-fixed-cta--visible {
   opacity: 1;
+  visibility: visible;
   pointer-events: auto;
 }
 

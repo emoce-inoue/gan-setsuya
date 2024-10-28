@@ -864,14 +864,14 @@ summary::-webkit-details-marker {
   background: linear-gradient(transparent 75%, var(--color-yellowscale-300) 75%);
   color: var(--color-grayscale-0);
   text-shadow:
-    2px 2px 0 var(--color-bluescale-100),
-    -2px -2px 0 var(--color-bluescale-100),
-    -2px 2px 0 var(--color-bluescale-100),
-    2px -2px 0 var(--color-bluescale-100),
-    0 2px 0 var(--color-bluescale-100),
-    0 -2px 0 var(--color-bluescale-100),
-    -2px 0 0 var(--color-bluescale-100),
-    2px 0 0 var(--color-bluescale-100);
+    2px 2px 0 var(--color-bluescale-200),
+    -2px -2px 0 var(--color-bluescale-200),
+    -2px 2px 0 var(--color-bluescale-200),
+    2px -2px 0 var(--color-bluescale-200),
+    0 2px 0 var(--color-bluescale-200),
+    0 -2px 0 var(--color-bluescale-200),
+    -2px 0 0 var(--color-bluescale-200),
+    2px 0 0 var(--color-bluescale-200);
   font-family: var(--font-thai-looped);
   font-weight: var(--font-bold);
   line-height: var(--leading-tight);
@@ -887,7 +887,7 @@ summary::-webkit-details-marker {
 
 .l-section__price {
   padding-block: 16px;
-  background-color: var(--color-grayscale-0);
+  background-color: var(--color-bluescale-50);
   border-radius: var(--rounded-l);
   border: 2px solid var(--color-yellowscale-300);
 }
