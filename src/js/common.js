@@ -21,9 +21,10 @@ document.addEventListener('DOMContentLoaded', () => {
   drawerCloseButton.addEventListener('click', hideDrawer);
 });
 
-window.addEventListener('load', function () {
+window.addEventListener('load', () => {
+  const isPC = window.innerWidth >= 1024;
   const detailsItems = document.querySelectorAll('.l-example__item');
-  if (window.innerWidth >= 1024) {
+  if (isPC) {
     detailsItems.forEach((item) => item.setAttribute('open', 'true'));
   } else {
     detailsItems.forEach((item, index) => {
