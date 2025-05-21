@@ -107,10 +107,12 @@
       <section class="l-mv">
         <div class="l-mv__background"></div>
         <div class="l-mv__inner js-fade">
-          <picture>
-            <source media="(min-width:768px)" srcset="images/mv-pc.webp" />
-            <img src="images/mv.webp" alt="がん保険のピッタリが見つかる!保険はAIで手軽に探そう！ 取扱保険会社約50社 取扱商品数約170" />
-          </picture>
+          <div class="l-mv__image">
+            <picture>
+              <source media="(min-width:768px)" srcset="images/mv-pc.webp" />
+              <img src="images/mv.webp" alt="がん保険のピッタリが見つかる!保険はAIで手軽に探そう！ 取扱保険会社約50社 取扱商品数約170" />
+            </picture>
+          </div>
           <div class="l-cta">
             <a href="" class="l-cta__button">
               <picture>
@@ -120,7 +122,7 @@
             </a>
           </div>
         </div>
-        <p class="l-mv__comment">＊取扱商品数・取扱保険会社はがん保険以外の取り扱いも含みます。</p>
+        <p class="l-mv__comment">＊がん保険以外の取り扱いも含みます。</p>
       </section>
 
       <section id="simulation" class="l-section l-section--background">
@@ -211,62 +213,81 @@
         </div>
       </section>
 
+      <section id="necessity" class="l-section">
+        <div class="l-section__inner l-section__inner--necessity js-fadeup">
+          <h2 class="l-section__title l-section__title-necessity">
+            <picture>
+              <source media="(min-width: 1024px)" srcset="images/necessity-pc.webp" />
+              <img src="images/necessity.webp" alt="Necessity がん保険の必要性" />
+            </picture>
+          </h2>
+          <div class="l-necessity">
+            <div class="l-necessity__quesiton">
+              <p class="l-necessity__quesiton-q l-necessity__quesiton-q--left"><img src="images/necessity-catch1.webp" alt="医療保険で十分じゃない？" /></p>
+              <p class="l-necessity__quesiton-q l-necessity__quesiton-q--right"><img src="images/necessity-catch2.webp" alt="がんになってから考えたらいいんじゃない？" /></p>
+              <div class="l-necessity__quesiton-illust"><img src="images/ncecessity-illust.webp" alt="男女のアイコン" /></div>
+            </div>
+            <ul class="l-necessity__answer">
+              <li class="l-neccesity__answer-item">
+                <p class="l-neccesity__answer-item-a">A</p>
+                <p class="l-neccesity__answer-item-text">
+                  ガンと診断されると
+                  <span class="l-neccesity__answer-item-text-strong">一定期間</span>
+                  は
+                  <br />
+                  加入できません！
+                  <br />
+                  健康なうちに備えておきましょう。
+                </p>
+              </li>
+              <li class="l-neccesity__answer-item">
+                <p class="l-neccesity__answer-item-a">A</p>
+                <p class="l-neccesity__answer-item-text">
+                  入院・手術だけではなく
+                  <br />
+                  <span class="l-neccesity__answer-item-text-strong">通院での長期治療</span>になる場合も！
+                  <br />
+                  医療保険だけでは足りないかも。
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       <section id="example" class="l-section">
         <div class="l-section__inner l-section__inner--example js-fadeup">
-          <h2 class="l-section__title l-section__title--example"><img src="images/example.webp" alt="Example お客さまの見積もり例" /></h2>
+          <h2 class="l-section__title l-section__title--example">
+            <picture>
+              <source media="(min-width: 1024px)" srcset="images/example-pc.webp" />
+              <img src="images/example.webp" alt="Example お客さまの見積もり例" />
+            </picture>
+          </h2>
           <div class="l-example">
             <div class="l-example__question">
               <p class="l-example__question-q">Q</p>
               <p class="l-example__question-text">あなたはどんな見積もりをしましたか？</p>
             </div>
-            <div class="l-example__list no-pc">
-              <details class="l-example__item" open>
+            <div class="l-example__list">
+              <details class="l-example__item">
                 <summary class="l-example__summary">
                   <span class="l-example__summary-inner">
-                    <label class="l-example__title">医療・がん・死亡</label>
-                    <label class="l-example__bold-title">全部見直し！</label>
-                  </span>
-                </summary>
-                <div class="l-example__contents">
-                  <div class="l-example__top">
-                    <div class="l-example__property">
-                      <div class="l-example__icon"><img src="images/example-icon-one.webp" alt="60代男性のアイコン" /></div>
-                      <p class="l-example__age">63歳 男性</p>
-                    </div>
-                    <p class="l-example__description">
+                    <span class="l-example__property">
+                      <span class="l-example__icon"><img src="images/example-icon-one.webp" alt="60代男性のアイコン" /></span>
+                      <span class="l-example__age">63歳 男性</span>
+                    </span>
+                    <span class="l-example__description">
                       子育てがひと段落。
                       <br />
                       家族に迷惑かけない程度に備えたい。
-                    </p>
-                  </div>
-                  <div><img src="images/example-contents-line.webp" alt="" /></div>
+                    </span>
+                  </span>
+                </summary>
+                <div class="l-example__contents">
                   <div class="l-example__bottom">
                     <div class="l-example__insurance">
-                      <ul class="l-example__insurance-list l-example__insurance-list--first">
-                        <li class="l-example__insurance-item">
-                          <p class="l-example__insurance-title">入院日額</p>
-                          <p class="l-example__insurance-price">
-                            5,000
-                            <span class="l-example__insurance-yen">円</span>
-                          </p>
-                        </li>
-                        <li class="l-example__insurance-item">
-                          <p class="l-example__insurance-title">がん診断一時金</p>
-                          <p class="l-example__insurance-price">
-                            100
-                            <span class="l-example__insurance-yen">万円</span>
-                          </p>
-                        </li>
-                        <li class="l-example__insurance-item">
-                          <p class="l-example__insurance-title">死亡保険金</p>
-                          <p class="l-example__insurance-price">
-                            200
-                            <span class="l-example__insurance-yen">万円</span>
-                          </p>
-                        </li>
-                      </ul>
                       <div class="l-example__saving">
-                        <p class="l-example__saving-star">しかも年間</p>
+                        <p class="l-example__saving-star"><img src="images/star-all.webp" alt="全部見直し！" /></p>
                         <div class="l-example__saving-text">
                           <em class="l-example__saving-large-text">20</em>
                           <p class="l-example__saving-middle-text">.4</p>
@@ -274,6 +295,34 @@
                           <p class="l-example__saving-normal-text">節約!!</p>
                         </div>
                       </div>
+                      <div class="l-example__insurance-list-wrapper">
+                        <p class="l-example__title">医療・がん・死亡</p>
+                        <ul class="l-example__insurance-list l-example__insurance-list--first">
+                          <li class="l-example__insurance-item">
+                            <div class="l-example__insurance-item-inner">
+                              <p class="l-example__insurance-title l-example__insurance-title--small">入院日額</p>
+                              <p class="l-example__insurance-price">
+                                5,000
+                                <span class="l-example__insurance-yen">円</span>
+                              </p>
+                            </div>
+                          </li>
+                          <li class="l-example__insurance-item">
+                            <p class="l-example__insurance-title l-example__insurance-title--small">がん診断一時金</p>
+                            <p class="l-example__insurance-price">
+                              100
+                              <span class="l-example__insurance-yen">万円</span>
+                            </p>
+                          </li>
+                          <li class="l-example__insurance-item">
+                            <p class="l-example__insurance-title l-example__insurance-title--small">死亡保険金</p>
+                            <p class="l-example__insurance-price">
+                              200
+                              <span class="l-example__insurance-yen">万円</span>
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -281,45 +330,22 @@
               <details class="l-example__item">
                 <summary class="l-example__summary">
                   <span class="l-example__summary-inner">
-                    <label class="l-example__title">医療・がん</label>
-                    <label class="l-example__bold-title">一部見直し！</label>
+                    <span class="l-example__property">
+                      <span class="l-example__icon"><img src="images/example-icon-two.webp" alt="40代女性のアイコン" /></span>
+                      <span class="l-example__age">45歳 女性</span>
+                    </span>
+                    <span class="l-example__description">
+                      加入中の保険は初期ガンが対象外...
+                      <br />
+                      医療保険も最新に！
+                    </span>
                   </span>
                 </summary>
                 <div class="l-example__contents">
-                  <div class="l-example__top">
-                    <div class="l-example__property">
-                      <div class="l-example__icon"><img src="images/example-icon-two.webp" alt="40代女性のアイコン" /></div>
-                      <p class="l-example__age">45歳 女性</p>
-                    </div>
-                    <p class="l-example__description">
-                      加入中の保険は
-                      <br />
-                      初期ガンが対象外...
-                      <br />
-                      医療保険も一緒に最新に！
-                    </p>
-                  </div>
-                  <div><img src="images/example-contents-line.webp" alt="" /></div>
                   <div class="l-example__bottom">
                     <div class="l-example__insurance">
-                      <ul class="l-example__insurance-list">
-                        <li class="l-example__insurance-item">
-                          <p class="l-example__insurance-title">入院日額</p>
-                          <p class="l-example__insurance-price">
-                            5,000
-                            <span class="l-example__insurance-yen">円</span>
-                          </p>
-                        </li>
-                        <li class="l-example__insurance-item">
-                          <p class="l-example__insurance-title">がん診断一時金</p>
-                          <p class="l-example__insurance-price">
-                            100
-                            <span class="l-example__insurance-yen">万円</span>
-                          </p>
-                        </li>
-                      </ul>
                       <div class="l-example__saving">
-                        <p class="l-example__saving-star">しかも年間</p>
+                        <p class="l-example__saving-star"><img src="images/star-part.webp" alt="一部見直し！" /></p>
                         <div class="l-example__saving-text">
                           <em class="l-example__saving-large-text">31</em>
                           <p class="l-example__saving-middle-text">.1</p>
@@ -327,6 +353,25 @@
                           <p class="l-example__saving-normal-text">節約!!</p>
                         </div>
                       </div>
+                      <div class="l-example__insurance-list-wrapper">
+                        <p class="l-example__title">医療・がん</p>
+                        <ul class="l-example__insurance-list">
+                          <li class="l-example__insurance-item l-example__insurance-item--second">
+                            <p class="l-example__insurance-title">入院日額</p>
+                            <p class="l-example__insurance-price">
+                              5,000
+                              <span class="l-example__insurance-yen">円</span>
+                            </p>
+                          </li>
+                          <li class="l-example__insurance-item">
+                            <p class="l-example__insurance-title">がん診断一時金</p>
+                            <p class="l-example__insurance-price">
+                              100
+                              <span class="l-example__insurance-yen">万円</span>
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -334,45 +379,22 @@
               <details class="l-example__item">
                 <summary class="l-example__summary">
                   <span class="l-example__summary-inner">
-                    <label class="l-example__title">がん</label>
-                    <label class="l-example__bold-title">一部見直し！</label>
+                    <span class="l-example__property">
+                      <span class="l-example__icon"><img src="images/example-icon-three.webp" alt="30代女性のアイコン" /></span>
+                      <span class="l-example__age">32歳 女性</span>
+                    </span>
+                    <span class="l-example__description">
+                      30代で心配な乳がんや子宮頸がんに
+                      <br class="tablet" />
+                      手厚い保障に変えました。
+                    </span>
                   </span>
                 </summary>
                 <div class="l-example__contents">
-                  <div class="l-example__top">
-                    <div class="l-example__property">
-                      <div class="l-example__icon"><img src="images/example-icon-three.webp" alt="30代女性のアイコン" /></div>
-                      <p class="l-example__age">32歳 女性</p>
-                    </div>
-                    <p class="l-example__description">
-                      30代で心配な
-                      <br />
-                      乳がんや子宮頸がんに
-                      <br />
-                      手厚い保障に変えました。
-                    </p>
-                  </div>
-                  <div><img src="images/example-contents-line.webp" alt="" /></div>
                   <div class="l-example__bottom">
                     <div class="l-example__insurance">
-                      <ul class="l-example__insurance-list">
-                        <li class="l-example__insurance-item">
-                          <p class="l-example__insurance-title">がん診断一時金</p>
-                          <p class="l-example__insurance-price">
-                            100
-                            <span class="l-example__insurance-yen">万円</span>
-                          </p>
-                        </li>
-                        <li class="l-example__insurance-item">
-                          <p class="l-example__insurance-title">死亡保険金</p>
-                          <p class="l-example__insurance-price">
-                            200
-                            <span class="l-example__insurance-yen">万円</span>
-                          </p>
-                        </li>
-                      </ul>
                       <div class="l-example__saving">
-                        <p class="l-example__saving-star">しかも年間</p>
+                        <p class="l-example__saving-star"><img src="images/star-part.webp" alt="一部見直し！" /></p>
                         <div class="l-example__saving-text">
                           <em class="l-example__saving-large-text">23</em>
                           <p class="l-example__saving-middle-text">.7</p>
@@ -380,191 +402,33 @@
                           <p class="l-example__saving-normal-text">節約!!</p>
                         </div>
                       </div>
+                      <div class="l-example__insurance-list-wrapper">
+                        <p class="l-example__title">がん・死亡</p>
+                        <ul class="l-example__insurance-list">
+                          <li class="l-example__insurance-item">
+                            <p class="l-example__insurance-title">がん診断一時金</p>
+                            <p class="l-example__insurance-price">
+                              100
+                              <span class="l-example__insurance-yen">万円</span>
+                            </p>
+                          </li>
+                          <li class="l-example__insurance-item">
+                            <p class="l-example__insurance-title">死亡保険金</p>
+                            <p class="l-example__insurance-price">
+                              200
+                              <span class="l-example__insurance-yen">万円</span>
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
               </details>
             </div>
 
-            <div class="l-example__list l-example__list-tab no-sp">
-              <div role="tablist" class="l-example__tab-list" aria-label="保険プランの見積もり例">
-                <button role="tab" id="tab1" class="l-example__tab-item" aria-selected="true" aria-controls="tabpanel1">
-                  <div class="l-example__tab-item-inner">
-                    <p class="l-example__title">医療・がん・死亡</p>
-                    <p class="l-example__bold-title">全部見直し！</p>
-                  </div>
-                </button>
-                <button role="tab" id="tab2" class="l-example__tab-item" aria-selected="false" aria-controls="tabpanel2">
-                  <div class="l-example__tab-item-inner">
-                    <p class="l-example__title">医療・がん</p>
-                    <p class="l-example__bold-title">一部見直し！</p>
-                  </div>
-                </button>
-                <button role="tab" id="tab3" class="l-example__tab-item" aria-selected="false" aria-controls="tabpanel3">
-                  <div class="l-example__tab-item-inner">
-                    <p class="l-example__title">がん</p>
-                    <p class="l-example__bold-title">一部見直し！</p>
-                  </div>
-                </button>
-              </div>
-
-              <div class="l-example__visibility">
-                <div id="tabpanel1" class="l-example__contents">
-                  <div class="l-example__top">
-                    <div class="l-example__icon"><img src="images/example-icon-one.webp" alt="60代男性のアイコン" /></div>
-                    <div class="l-example__property">
-                      <p class="l-example__age">63歳 男性</p>
-                      <p class="l-example__description">
-                        子育てがひと段落。
-                        <br />
-                        家族に迷惑かけない程度に備えたい。
-                      </p>
-                    </div>
-                  </div>
-                  <div class="l-example__bottom">
-                    <div class="l-example__insurance">
-                      <ul class="l-example__insurance-list">
-                        <li class="l-example__insurance-item">
-                          <p class="l-example__insurance-title">入院日額</p>
-                          <p class="l-example__insurance-price">
-                            5,000
-                            <span class="l-example__insurance-yen">円</span>
-                          </p>
-                        </li>
-                        <li class="l-example__insurance-item">
-                          <p class="l-example__insurance-title">がん診断一時金</p>
-                          <p class="l-example__insurance-price">
-                            100
-                            <span class="l-example__insurance-yen">万円</span>
-                          </p>
-                        </li>
-                        <li class="l-example__insurance-item">
-                          <p class="l-example__insurance-title">死亡保険金</p>
-                          <p class="l-example__insurance-price">
-                            200
-                            <span class="l-example__insurance-yen">万円</span>
-                          </p>
-                        </li>
-                      </ul>
-                      <div class="l-example__saving">
-                        <p class="l-example__saving-star">しかも</p>
-                        <div class="l-example__saving-text">
-                          <p class="l-example__saving-small-text l-example__saving-small-text--blue">年間</p>
-                          <div class="l-example__saving-number">
-                            <em class="l-example__saving-large-text">20</em>
-                            <p class="l-example__saving-middle-text">.4</p>
-                          </div>
-                          <p class="l-example__saving-small-text">万円</p>
-                          <p class="l-example__saving-normal-text">節約!!</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="l-example__visibility" hidden="until-found">
-                <div id="tabpanel2" class="l-example__contents">
-                  <div class="l-example__top">
-                    <div class="l-example__icon"><img src="images/example-icon-two.webp" alt="40代女性のアイコン" /></div>
-                    <div class="l-example__property">
-                      <p class="l-example__age">45歳 女性</p>
-                      <p class="l-example__description">
-                        加入中の保険は
-                        <br />
-                        初期ガンが対象外...
-                        <br />
-                        医療保険も一緒に最新に！
-                      </p>
-                    </div>
-                  </div>
-                  <div class="l-example__bottom">
-                    <div class="l-example__insurance">
-                      <ul class="l-example__insurance-list">
-                        <li class="l-example__insurance-item">
-                          <p class="l-example__insurance-title">入院日額</p>
-                          <p class="l-example__insurance-price">
-                            5,000
-                            <span class="l-example__insurance-yen">円</span>
-                          </p>
-                        </li>
-                        <li class="l-example__insurance-item">
-                          <p class="l-example__insurance-title">がん診断一時金</p>
-                          <p class="l-example__insurance-price">
-                            100
-                            <span class="l-example__insurance-yen">万円</span>
-                          </p>
-                        </li>
-                      </ul>
-                      <div class="l-example__saving">
-                        <p class="l-example__saving-star">しかも</p>
-                        <div class="l-example__saving-text">
-                          <p class="l-example__saving-small-text l-example__saving-small-text--blue">年間</p>
-                          <div class="l-example__saving-number">
-                            <em class="l-example__saving-large-text">31</em>
-                            <p class="l-example__saving-middle-text">.1</p>
-                          </div>
-                          <p class="l-example__saving-small-text">万円</p>
-                          <p class="l-example__saving-normal-text">節約!!</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="l-example__visibility" hidden="until-found">
-                <div id="tabpanel3" class="l-example__contents">
-                  <div class="l-example__top">
-                    <div class="l-example__icon"><img src="images/example-icon-three.webp" alt="30代女性のアイコン" /></div>
-                    <div class="l-example__property">
-                      <p class="l-example__age">32歳 女性</p>
-                      <p class="l-example__description">
-                        30代で心配な
-                        <br />
-                        乳がんや子宮頸がんに
-                        <br />
-                        手厚い保障に変えました。
-                      </p>
-                    </div>
-                  </div>
-                  <div class="l-example__bottom">
-                    <div class="l-example__insurance">
-                      <ul class="l-example__insurance-list">
-                        <li class="l-example__insurance-item">
-                          <p class="l-example__insurance-title">がん診断一時金</p>
-                          <p class="l-example__insurance-price">
-                            100
-                            <span class="l-example__insurance-yen">万円</span>
-                          </p>
-                        </li>
-                        <li class="l-example__insurance-item">
-                          <p class="l-example__insurance-title">死亡保険金</p>
-                          <p class="l-example__insurance-price">
-                            200
-                            <span class="l-example__insurance-yen">万円</span>
-                          </p>
-                        </li>
-                      </ul>
-                      <div class="l-example__saving">
-                        <p class="l-example__saving-star">しかも</p>
-                        <div class="l-example__saving-text">
-                          <p class="l-example__saving-small-text l-example__saving-small-text--blue">年間</p>
-                          <div class="l-example__saving-number">
-                            <em class="l-example__saving-large-text">23</em>
-                            <p class="l-example__saving-middle-text">.7</p>
-                          </div>
-                          <p class="l-example__saving-small-text">万円</p>
-                          <p class="l-example__saving-normal-text">節約!!</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
             <p class="l-example__comment">
-              ＊節約額は年間平均保険料
-              <sup class="l-example__mark">※</sup>
-              から見積額を差し引いた金額です。
+              ＊節約額は年間平均保険料<sup class="l-example__mark">※</sup>から見積額を差し引いた金額です。
               <br class="no-pc" />
               年間保険料に含まれている保険種類は弊社ではわかりかねます。
             </p>
@@ -844,10 +708,10 @@
         <div class="l-section__inner l-section__inner--contact js-fadeup">
           <h2 class="l-section__title l-section__title--contanct"><img src="images/contact.webp" alt="Contact お問い合わせ" /></h2>
           <div class="l-contact">
-            <a href="tel:0120-407-672" class="l-contact__link">
+            <a href="tel:0120-907-037" class="l-contact__link">
               <div class="l-contact__tel-icon"><img src="images/tel.webp" alt="電話のアイコン" /></div>
               <div class="l-contact__business-hours">
-                <p class="l-contact__tel">0120-407-672</p>
+                <p class="l-contact__tel">0120-907-037</p>
                 <p class="l-contact__receipt">
                   受付時間　平日
                   <em class="l-contact__time">10:00-19:00</em>
