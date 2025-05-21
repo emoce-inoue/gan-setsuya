@@ -1,5 +1,6 @@
 /* stylelint-disable selector-max-id, declaration-no-important */
-.no-sp {
+.no-sp,
+.tablet {
   display: none !important;
 }
 
@@ -7,12 +8,19 @@
   display: grid !important;
 }
 
+@media only screen and (min-width: 768px) {
+  .tablet {
+    display: grid !important;
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .no-sp {
     display: grid !important;
   }
 
-  .no-pc {
+  .no-pc,
+  .tablet {
     display: none !important;
   }
 }

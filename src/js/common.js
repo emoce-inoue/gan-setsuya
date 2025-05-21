@@ -20,3 +20,19 @@ document.addEventListener('DOMContentLoaded', () => {
   hamburger.addEventListener('click', showDrawer);
   drawerCloseButton.addEventListener('click', hideDrawer);
 });
+
+window.addEventListener('load', () => {
+  const isPC = window.innerWidth >= 1024;
+  const detailsItems = document.querySelectorAll('.l-example__item');
+  if (isPC) {
+    detailsItems.forEach((item) => item.setAttribute('open', 'true'));
+  } else {
+    detailsItems.forEach((item, index) => {
+      if (index === 0) {
+        item.setAttribute('open', 'true');
+      } else {
+        item.removeAttribute('open');
+      }
+    });
+  }
+});
