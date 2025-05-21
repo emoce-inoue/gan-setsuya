@@ -31,7 +31,7 @@
   inset-inline: 0;
   inset-block-end: 0;
   inline-size: min(100%, 322px);
-  margin-block-end: 0 auto calc(47 * var(--fluid-ratio-min));
+  margin: 0 auto calc(47 * var(--fluid-ratio-min));
 }
 
 .l-mv__comment {
@@ -1109,11 +1109,6 @@
     inline-size: 100%;
   }
 
-  .l-example__top {
-    grid-auto-flow: row;
-    justify-items: center;
-  }
-
   .l-example__icon {
     max-inline-size: 75px;
   }
@@ -1472,6 +1467,10 @@
     .l-cta__button:hover {
       cursor: pointer;
       animation: push 0.5s linear;
+    }
+
+    .l-example__summary:hover {
+      cursor: pointer;
     }
 
     .l-faq__accordion:hover,
